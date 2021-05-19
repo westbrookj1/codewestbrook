@@ -1,0 +1,25 @@
+h1 {
+    color: black;
+}
+header {
+    background-color:lightcyan;
+    color:black;
+    padding: 2% 0%;
+    border: thick solid lightgreen;
+    margin: 10px 10px 30px;
+    font-size: xx-large;
+    font: bold;
+    
+
+
+}
+
+#WODcontent { color: red;
+align-items: baseline;
+}
+
+footer {
+    font-size: 10px;
+    margin-top:100px  ;
+    
+}
