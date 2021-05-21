@@ -17,7 +17,15 @@ header {
 #WODcontent { color: black;
 align-items: baseline;
 }
+.whale {
+    max-width: 30%;
+    max-height: 30%;
+height: auto;
+width: auto;  
+    padding: 15px;
+    object-fit: cover; 
 
+}
 footer {
     font-size: 10px;
     margin-top:100px  ;
