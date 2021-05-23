@@ -5,7 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexa Web Feed</title>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> 
+<script>
+var now= new Date()
+var currentYear=now.getFullYear() </script>
+    
 </head>
+<header><center>John's Coding Project</center></header>
+<body>
+<main>
+    <script> 
+    $(function () {
+    WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit', currentYear + '-' + '5-5', 'json', renderWOD);
+    }); 
+    var WODify = function (key, location, program, date, type, callback) {
+    var typeToUse = type == 'json' ? 'json' : 'xml';
+        $.ajax({
+            type: 'GET',
+            url: 'https://app.wodify.com/API/WODs_v1.aspx',
+            data: {
+                'apikey': key,
+                'location': location,
+                'program': program,
+                'date': date, //used to pick date
+                'type': typeToUse
+            },
+            dataType: typeToUse,
+            success: function (data) {
+                if (typeof data.RecordList != 'undefined') {
+                    callback(data.RecordList.APIWod.FormattedWOD, false);
+                } else {
+                    callback(data.APIError.ErrorMessage, true);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    };
+    var renderWOD = function (FormattedWOD, WODError) {
+        $('#WODcontent').html(FormattedWOD);
+    };
+    
+    </script> 
 <body>
     <p>test</p>
     
