@@ -9,7 +9,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> 
 <script>
-<script>
+
 				var today = new Date();
 				var dd = today.getDate();
 				var mm = today.getMonth()+1; 
@@ -30,7 +30,7 @@
 <main>
     <script> 
     $(function () {
-    WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit', currentYear + '-' + currentDate, 'json', renderWOD);
+    WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit',currentDate, 'json', renderWOD);
     }); 
     var WODify = function (key, location, program, date, type, callback) {
     var typeToUse = type == 'json' ? 'json' : 'xml';
@@ -62,7 +62,7 @@
     };
     
     </script> 
-<body>
-    <div id="WODcontent"> </div>
+<body onload='currentWod()'></body>
+    <div id="WODcontent"></div>
 </body>
 </html>
