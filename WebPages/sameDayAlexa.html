@@ -9,16 +9,28 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> 
 <script>
-var now= new Date()
-var currentYear=now.getFullYear() </script>
+<script>
+				var today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; 
+				var yyyy = today.getFullYear();
+							if(dd<10) 
+							{
+								dd='0'+dd;
+							} 
+							if(mm<10) 
+							{
+								mm='0'+mm;
+							} 
+				var currentDate = yyyy+ '-' + mm + '-' + dd</script>
+                </script>
     
 </head>
-<header><center>John's Coding Project</center></header>
 <body>
 <main>
     <script> 
     $(function () {
-    WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit', currentYear + '-' + '5-5', 'json', renderWOD);
+    WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit', currentYear + '-' + currentDate, 'json', renderWOD);
     }); 
     var WODify = function (key, location, program, date, type, callback) {
     var typeToUse = type == 'json' ? 'json' : 'xml';
@@ -51,7 +63,6 @@ var currentYear=now.getFullYear() </script>
     
     </script> 
 <body>
-    <p>test</p>
-    <div id="WODcontent"> The program has encountered some type of error. Please contact the admin...</div>
+    <div id="WODcontent"> </div>
 </body>
 </html>
