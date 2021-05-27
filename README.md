@@ -11,6 +11,9 @@ CodeWestbrook working Project
 	
 	
 	testing github branches
+
+	 <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/codewestbrook.css">
+	full path for live css 
 	
 	
 

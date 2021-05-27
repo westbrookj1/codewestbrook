@@ -4,24 +4,49 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/codewestbrook.css">
+			<link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/codewestbrook.css">
+			<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> 
+			<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <title>John's Coding Project</title>
- 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script> 
-	<script>
-	var now= new Date()
-	var currentYear=now.getFullYear() </script>
-		
+		<script>
+			$( function() {
+			$( "#datepicker" ).datepicker({
+				dateFormat: "yy-mm-dd";
+				onSelect()
+			});
+			} );
+			</script>
+	
+					<script>
+				var today = new Date();
+				var dd = today.getDate();
+				var mm = today.getMonth()+1; 
+				var yyyy = today.getFullYear();
+							if(dd<10) 
+							{
+								dd='0'+dd;
+							} 
+							if(mm<10) 
+							{
+								mm='0'+mm;
+							} 
+				var currentDate = yyyy+ '-' + mm + '-' + dd</script>
 	</head>
 	<header><center>John's Coding Project</center></header>
- <body>
+ <body onload='currentWod()'>
 	<main>
 		<script> 
-		var DateInput = prompt("Please Enter MONTH-DAY of the workout you want. Example 12-18...", "");
-			if (DateInput!= null) { 
+		function currentWod () {
+		WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit',currentDate, 'json', renderWOD);}
+function myFunction(){
+	var dateVal = document.getElementById("date").value;
+			if (dateVal!= null) { 
 		$(function () {
-		WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit', currentYear + '-' + DateInput, 'json', renderWOD);
-		}); 
+		WODify('10smrc33dl8tkbgzasrctu5dh', "CrossFit Covalence", 'CrossFit',dateVal, 'json', renderWOD);
+		}); };};
 		var WODify = function (key, location, program, date, type, callback) {
 		var typeToUse = type == 'json' ? 'json' : 'xml';
 			$.ajax({
@@ -50,12 +75,24 @@
 		var renderWOD = function (FormattedWOD, WODError) {
 			$('#WODcontent').html(FormattedWOD);
 		};
-		};
+		
 		</script> 
-	<div><img src="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/Images/kp.jpg" alt="photo of a whale" class="whale" ></div>
+	<div><img src="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/Images/samantha.png" alt="photo of a whale" class="coverphoto" ></div>
 		 <article id="workout"> <h1>You Betta Work</h1>
+		<h5> Select a Date, then click "View Workout"</h5>
+			
+		<input type="date" id="date" onclick="myFunction">
+<button onclick="myFunction()">View Workout</button>
+
+<div id="dateselector">
+<script>
+    function date() {
+        var dateVal = document.getElementById("date").value;
+        alert("Your typed in " + dateVal);
+    }
+</script>
+</div>		
 		<div id="WODcontent"> The program has encountered some type of error. Please contact the admin...</div>
-	
 	</article>
 	  </main>
 	  <footer>
