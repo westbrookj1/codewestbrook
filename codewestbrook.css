@@ -1,22 +1,43 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    hyphens: auto
+}
+body {
+    font-family: 'Mate SC', serif;
+    line-height: 1.5;
+}
 h1 {
     color: black;
+    line-height: 1.1;
 }
 header {
     background-color:lightcyan;
     color:black;
     padding: 2% 0%;
     border: thick solid orange;
-    margin: 10px 10px 30px;
+    margin: -1rem,-1rem,1rem;
     font-size: xx-large;
     font: bold;
-    
+line-height: 1.1;}
 
-
-}
 
 #WODcontent { color: black;
 align-items: baseline;
+background-color:lightgreen;
+box-shadow:0 0 3px 7px black;
+box-sizing: content-box;
+width: 75%;}
+
+@media screen and (min-width: 700px){
+    #WODcontent{
+        width: 50%;
+    }
 }
+
 .coverphoto {
     max-width: 30%;
     max-height: 400px;
@@ -31,10 +52,11 @@ align-items: baseline;
 }
 footer {
     font-size: 10px;
-    margin-top:100px  ;
+    margin-top:100px;
+    line-height: 1.1;
     
 }
 
 #dateselector {
-    margin: 70px;
+    margin: 10px;
 }
