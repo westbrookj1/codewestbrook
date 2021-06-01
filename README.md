@@ -8,7 +8,7 @@ CodeWestbrook working Project
 	v3.1- added Git functionality;5/18/21 
 	v3.2- added code pipeline and finalized initial GIT setup;5/19/21
 	v3.3- added whale photo. 5/21/21
-	
+	v4.0- added calender functionality 5/27/21
 	
 	testing github branches
 

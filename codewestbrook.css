@@ -17,9 +17,11 @@ h1 {
 header {
     background-color:lightcyan;
     color:black;
-    padding: 2% 0%;
     border: thick solid orange;
-    margin: -1rem,-1rem,1rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: xx-large;
     font: bold;
 line-height: 1.1;}
@@ -46,8 +48,10 @@ width: 75%;}
     padding: 15px;
     object-fit: cover;
     display: block;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20%;
 
 }
 footer {
@@ -60,3 +64,28 @@ footer {
 #dateselector {
     margin: 10px;
 }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #111;
+  }
