@@ -41,7 +41,7 @@ line-height: 1.1;}
     background-blend-mode: multiply;
     opacity: 0.9;
     border-radius: 10%;
-    padding: 20px;
+    padding: 15px;
 }
 
 
@@ -50,6 +50,12 @@ line-height: 1.1;}
         width: 50%;
     }
 }
+@media screen and (max-width: 700px){
+    #WODcontent{
+       padding:25px;
+    }
+}
+
 
 /*.coverphoto {
     max-width: 30%;
