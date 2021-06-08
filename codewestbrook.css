@@ -1,7 +1,3 @@
-
-
-
-
 * {
     box-sizing: border-box;
     hyphens: auto
@@ -51,6 +47,19 @@ line-height: 1.1;}
         width: 50%;
         padding:25px;
     }
+}
+
+#EmailDiv{ align-items: center;
+    margin: auto;
+    padding: 3vh;
+
+
+}
+#EmailClickMe{
+    margin: auto;
+color: blue;
+    box-sizing:border-box
+
 }
 
 
