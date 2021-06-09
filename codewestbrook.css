@@ -2,7 +2,18 @@
     box-sizing: border-box;
     hyphens: auto
 }
+main { margin: 0 auto;
+    width:95%;
+    text-align: center;
 
+}
+@media screen and (min-width: 750px) {
+    main{
+        width: 90%
+    }
+
+}
+    
 
 body {
     font-family: 'Mate SC', serif;
@@ -33,7 +44,6 @@ line-height: 1.1;}
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    width: 75%;
     background: url(https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/Images/samantha.png) center / cover no-repeat grey;
     background-blend-mode: multiply;
     opacity: 0.9;
@@ -44,7 +54,7 @@ line-height: 1.1;}
 
 @media screen and (min-width: 750px){
     #WODcontent{
-        width: 50%;
+        width: 60%;
         padding:25px;
     }
 }
