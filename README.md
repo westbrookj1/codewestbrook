@@ -1,21 +1,40 @@
 # codewestbrook
-CodeWestbrook working Project
-	V1.0- Starting version; 3/26/21
-	V1.1- added centered header, changed title, removed example prompt language; 3/31/21
-	v1.1- added header tags, organized data a little better-4/5/21
-	v2.0- added CSS sheets and interconnectivity (still not live for S3)
-	v3.0- added more CSS- Enhanced Footer, and implemented CSS Box styling.
-	v3.1- added Git functionality;5/18/21 
-	v3.2- added code pipeline and finalized initial GIT setup;5/19/21
-	v3.3- added whale photo. 5/21/21
-	v4.0- added calender functionality 5/27/21
-	v5.0- added enhanced css and movile first approaches 6/9/21
-	
-	testing github branches
 
-	 <link rel="stylesheet" href="https://s3.us-east-2.amazonaws.com/codewestbrook.com/file/codewestbrook.css">
-	full path for live css 
-	
-	
+## Overiew of Project: 
+
+The idea for this project started back in October of 2020. Myself and a group of friends who all go to the same gym (Crossfit Covalence) wanted a way to see the workout for the next day before the viewable time. Currently, the gym software (Wodify) used at our gym limits the viewing of the next day's workout till 10PM the day prior. You also can not view multiple days in advance. In an effort to solve this, I had an idea to create an Alexa app to pass through the required information into the Wodify API and Alexa would read off what the workout was. Clearly I was reaching for the stars- but it was the birth of this project. You will also note the "Test" hyperlink at the bottom of the page which will serve as the static page for the Alexa Dream project (yet to be completed).
+
+## Front-End Web Development Features Used:
+
+
+Media Queries: 
+
+1)
+@media screen and (min-width: 750px){
+    #WODcontent{
+        width: 60%;
+        padding:25px;
+    }
+}
+
+0,720,1025 (Breakpoints on media query) Need to move to bottom and break out
+
+need to script tag the JS 
+This resizes the main flexbox that holds the workout data. It will resize 2x upon the screen becoming large enough. 
+
+
+
+
+CSS:
+
+
+
+
+
+
+JS:
+
+
+
 
 	
