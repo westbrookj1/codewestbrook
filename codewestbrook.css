@@ -13,7 +13,6 @@ main { margin: 0 auto;
     }
 
 }
-    
 
 body {
     font-family: 'Mate SC', serif;
@@ -48,28 +47,17 @@ line-height: 1.1;}
     background-blend-mode: multiply;
     opacity: 0.9;
     border-radius: 10%;
-    padding: 15px;
-}
-
-
-@media screen and (min-width: 750px){
-    #WODcontent{
-        width: 60%;
-        padding:25px;
-    }
+    padding:15px;
 }
 
 #EmailDiv{ align-items: center;
     margin: auto;
     padding: 3vh;
-
-
 }
 #EmailClickMe{
     margin: auto;
 color: blue;
     box-sizing:border-box
-
 }
 
 
@@ -92,6 +80,9 @@ footer {
     font-size: 10px;
     margin-top:100px;
     line-height: 1.1;
+    position: fixed;
+    left: 0;
+    bottom: 0;s
     
 }
 
@@ -101,11 +92,14 @@ footer {
 
 
 ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #246;
+    flex-direction: column;
+    align-items: stretch;
   }
   
   li {
@@ -121,8 +115,11 @@ ul {
   }
 
   li a:hover {
-    background-color: #111;
+    background-color: white;
+    color: black;
+    
   }
+
 
   #datebutton {
       background-image: radial-gradient(green,yellow );
@@ -132,3 +129,34 @@ ul {
       
   }
   #datebutton7{margin: 20px;}
+
+
+
+  
+/*Section for Media Queries because Im a good coder and am trying to segment things :)*/
+@media screen and (min-width: 750px){
+    #WODcontent{
+        width: 60%;
+        padding:25px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #WODcontent{
+        width: 80%;
+        padding:25px;
+    }
+}
+
+
+@media screen and (min-width: 750px){
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #246;
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }

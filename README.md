@@ -7,7 +7,7 @@ The idea for this project started back in October of 2020. Myself and a group of
 ## Front-End Web Development Features Used:
 
 
-Media Queries: 
+#Media Queries: 
 
 1)
 @media screen and (min-width: 750px){
@@ -16,25 +16,42 @@ Media Queries:
         padding:25px;
     }
 }
+2)
+@media screen and (min-width: 1200px){
+    #WODcontent{
+        width: 80%;
+        padding:25px;
+    }
+}
 
-0,720,1025 (Breakpoints on media query) Need to move to bottom and break out
+3) 
 
-need to script tag the JS 
-This resizes the main flexbox that holds the workout data. It will resize 2x upon the screen becoming large enough. 
-
-
-
-
-CSS:
-
-
-
-
-
-
-JS:
+@media screen and (min-width: 750px){
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #246;
+        flex-direction: row;
+        align-items: stretch;
+      }
+    }
 
 
+#CSS:
+
+1. Flex Box Menu Navigation
+2. Hamburger menu- transforms to row menu on media query
+
+#JS:
+1. Jquery call 
+2. Api Call to external source
+3. Calendar Creation
+4. Variable stores Calendar date
+5. View workout button iniates Script over again.
 
 
-	
+#Note
+Still actively working on Other tabs of the Website. Website was built for a friend group to see workouts in advance and meet CodeLouisville Requirements. 
