@@ -80,14 +80,14 @@ footer {
     font-size: 10px;
     margin-top:100px;
     line-height: 1.1;
-    position: fixed;
+    position: sticky bottom left;
     left: 0;
-    bottom: 0;s
+    bottom: 0
     
 }
 
 #dateselector {
-    margin: 10px;
+    margin: 10px
 }
 
 
